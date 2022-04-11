@@ -1,16 +1,15 @@
 // This #include statement was automatically added by the Particle IDE.
+// Library that get Functions needed to get the humidity and temperature reading from the Sensors
 #include <Adafruit_DHT.h>
 
 
-
-DHT dht(A0,DHT11);
+DHT dht(A0,DHT11); // Get the DHT pin and DHT type 
 
 int led = D7; // Set Pin D7 as led 
-int photodiode = A0;
 
 void setup() {
     pinMode(led, OUTPUT); // D7 pin in-built LED
-    dht.begin();
+    dht.begin(); // Activate DHT11
 
 }
 
